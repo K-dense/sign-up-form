@@ -1,9 +1,13 @@
-/* Background Image made by: https://flickerfae.tumblr.com/ */
+/* Background Image made by: https://www.waneella.com/ */
+
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
 }
 
 .centering {
@@ -24,11 +28,12 @@
   justify-content: space-between;
   align-items: center;
   height: 99.9vh;
-  background-image: url(https://64.media.tumblr.com/0f3927f0017e84b9c6ec69901c5a825a/tumblr_n9lwm7N7VX1tz79vpo1_r1_1280.gifv);
+  background: url(https://64.media.tumblr.com/451bca19ad0b695c08b54b4287e4f935/tumblr_nb70h5f6XN1rnbw6mo2_r1_1280.gifv) no-repeat center;
 }
 
 .left-container_title > img {
   width: 3.5rem;
+  margin-right: 20px;
 }
 
 .left-container_title {
@@ -39,6 +44,7 @@
   font-size: 3rem;
   text-transform: uppercase;
   color: white;
+  letter-spacing: 15px;
   padding: 10px 50px;
   margin-top: 10rem;
   background-color: rgba(0, 0, 0, 0.4);
@@ -46,6 +52,27 @@
 
 .left-container_credits {
   margin-bottom: 10px;
-  font-size: 10px;
+  font-size: 15px;
   color: white;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-left: 50px;
+  background: url(https://images.unsplash.com/photo-1519750783826-e2420f4d687f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnViYmxlcyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80) no-repeat center;
+}
+
+.right-container > h3 {
+  font-size: 2rem;
+}
+
+.right-container > h3:nth-child(1)::after {
+  content: ' Sign up now to get started.';
+  display: block;
+}
+
+.form-container {
+  border: 1px solid red;
 }
