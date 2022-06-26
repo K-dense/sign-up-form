@@ -1,13 +1,23 @@
 /* Background Image made by: https://www.waneella.com/ */
 
-@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@400;500;600&display=swap');
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-family: 'Amatic SC', cursive;
-  font-weight: 700;
+}
+
+a {
+  color: rgb(126, 112, 192);
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease-in-out;
+}
+
+a:hover {
+  color: white;
+  text-shadow: 2px 2px rgb(126, 112, 192);
 }
 
 .centering {
@@ -28,6 +38,8 @@
   justify-content: space-between;
   align-items: center;
   height: 99.9vh;
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
   background: url(https://64.media.tumblr.com/451bca19ad0b695c08b54b4287e4f935/tumblr_nb70h5f6XN1rnbw6mo2_r1_1280.gifv) no-repeat center;
 }
 
@@ -59,13 +71,19 @@
 .right-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 2rem;
-  padding-left: 50px;
   background: url(https://images.unsplash.com/photo-1519750783826-e2420f4d687f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YnViYmxlcyUyMGJhY2tncm91bmR8ZW58MHx8MHx8&w=1000&q=80) no-repeat center;
 }
 
 .right-container > h3 {
   font-size: 2rem;
+  color: white;
+  padding-left: 50px;
+  padding-right: 50px;
+
+  font-family: 'Amatic SC', cursive;
+  font-weight: 700;
 }
 
 .right-container > h3:nth-child(1)::after {
@@ -74,5 +92,71 @@
 }
 
 .form-container {
-  border: 1px solid red;
+  padding: 0 0 35px 50px;
+  font-family: 'Quicksand', sans-serif;
+  background-color: rgba(241, 239, 239, 0.6);
+}
+
+.form-container > h3 {
+  margin-top: 20px;
+}
+
+.names-fields, .email-phone-fields, .password-fields {
+  display: flex;
+  gap: 50px;
+}
+
+.first-name, .last-name, .email-field, .phone-field, .password1, .password2 {
+  display: flex;
+  flex-direction: column;
+  width: 19vw;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  padding-top: 20px;
+  margin-bottom: 4px;
+  font-size: .8rem;
+  letter-spacing: 3px;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid rgba(76, 129, 241, 0.5);
+  border-radius: 4px;
+  transition: box-shadow 0.2s ease-in-out;
+  outline: none;
+}
+
+input:focus {
+  box-shadow: 0 0 0 1px rgba(121, 98, 226, 0.808);
+}
+
+button {
+  margin-left: 50px;
+  width: 20%;
+  padding: 10px 0;
+  border: none;
+  border-radius: 7px;
+  font-weight: 600;
+  color: white;
+  background-color: rgba(152, 146, 180, 0.788);
+  font-family: 'Quicksand', sans-serif;
+  cursor: pointer;
+
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  box-shadow: 0 0 0 3px rgba(152, 146, 180, 0.788);
+  color: rgb(152, 146, 180);
+  background-color: white;
+}
+
+.sign-in {
+  margin-left: 50px;
+  font-family: 'Quicksand', sans-serif;
 }
