@@ -37,7 +37,7 @@ a:hover {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 99.9vh;
+  height: 100vh;
   font-family: 'Amatic SC', cursive;
   font-weight: 700;
   background: url(https://64.media.tumblr.com/451bca19ad0b695c08b54b4287e4f935/tumblr_nb70h5f6XN1rnbw6mo2_r1_1280.gifv) no-repeat center;
@@ -93,6 +93,7 @@ a:hover {
 }
 
 .form-container {
+  position: relative;
   padding: 0 0 35px 50px;
   font-family: 'Quicksand', sans-serif;
   background-color: rgba(241, 239, 239, 0.6);
@@ -136,8 +137,17 @@ input:focus {
   box-shadow: 0 0 0 1px rgba(121, 98, 226, 0.808);
 }
 
+input:invalid {
+  border: 1px solid rgb(194, 123, 123);
+}
+
+input:valid {
+  border: 1px solid rgba(61, 196, 155, 0.5);
+}
+
 button {
-  margin-left: 50px;
+  position: absolute;
+  top: 19rem;
   width: 20%;
   padding: 10px 0;
   border: none;
@@ -158,6 +168,6 @@ button:hover {
 }
 
 .sign-in {
-  margin-left: 50px;
+  margin: 50px 0 0 50px;
   font-family: 'Quicksand', sans-serif;
 }

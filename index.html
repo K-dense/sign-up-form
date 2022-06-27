@@ -36,39 +36,39 @@
               <fieldset class="names-fields">
                 <div class="first-name">
                   <label for="firstName">First Name</label>
-                  <input type="text" id="firstName" name="firstName" />
+                  <input type="text" id="firstName" name="firstName" required/>
                 </div>
 
                 <div class="last-name">
                   <label for="lastName">Last Name</label>
-                  <input type="text" id="lastName" name="lastName" />
+                  <input type="text" id="lastName" name="lastName" required/>
                 </div>
               </fieldset>
               <fieldset class="email-phone-fields">
                 <div class="email-field">
                   <label for="email">Email</label>
-                  <input type="email" id="email" name="email" />
+                  <input type="email" id="email" name="email" required/>
                 </div>
 
                 <div class="phone-field">
                   <label for="phoneNumber">Phone Number</label>
-                  <input type="text" id="phoneNumber" name="phoneNumber" />
+                  <input type="text" id="phoneNumber" name="phoneNumber" required/>
                 </div>
               </fieldset>
               <fieldset class="password-fields">
                 <div class="password1">
                   <label for="userPassword">Password</label>
-                  <input type="password" id="userPassword" name="userPassword" />
+                  <input type="password" id="userPassword" name="userPassword" minlength="8" maxlength="22" required/>
                 </div>
 
                 <div class="password2">
                   <label for="userPassword">Confirm Password</label>
-                  <input type="password" id="userPassword" name="userPassword" />
+                  <input type="password" id="userPassword" name="userPassword" minlength="8" maxlength="22" required/>
                 </div>
               </fieldset>
+              <button type="submit">Create Account</button>
             </form>
           </div>
-          <button type="submit">Create Account</button>
           <div class="sign-in">Already have an account? <a href="#">Log in</a></div>
         </div>
       </div>
