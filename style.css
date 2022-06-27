@@ -43,6 +43,17 @@ a:hover {
   background: url(https://64.media.tumblr.com/451bca19ad0b695c08b54b4287e4f935/tumblr_nb70h5f6XN1rnbw6mo2_r1_1280.gifv) no-repeat center;
 }
 
+.socials {
+  position: absolute;
+  top: 20px;
+}
+
+.socials > ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px
+}
+
 .left-container_title > img {
   width: 3.5rem;
   margin-right: 20px;
