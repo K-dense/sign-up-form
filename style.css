@@ -111,7 +111,6 @@ a:hover {
 .first-name, .last-name, .email-field, .phone-field, .password1, .password2 {
   display: flex;
   flex-direction: column;
-  width: 19vw;
 }
 
 fieldset {
@@ -170,4 +169,56 @@ button:hover {
 .sign-in {
   margin: 50px 0 0 50px;
   font-family: 'Quicksand', sans-serif;
+}
+
+@media only screen and (max-width: 950px) {
+  .main-container {
+    flex-direction: column;
+  }
+
+  .right-container {
+    align-items: center;
+  }
+
+  .right-container > h3 {
+    display: none;
+  }
+
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    width: 100%;
+  }
+
+  form {
+    padding-bottom: 20px;
+  }
+
+  .names-fields, .email-phone-fields, .password-fields {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .first-name, .last-name, .email-field, .phone-field, .password1, .password2 {
+    display: flex;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  button {
+    top: 105%;
+    left: 7.4rem;
+    width: 40%;
+  }
+
+  .sign-in {
+    margin: 50px 0 0 0;
+    padding: 0;;
+    padding-bottom: 20px;
+  }
 }
